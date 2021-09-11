@@ -1,0 +1,48 @@
+package baiTap;
+
+import java.util.Scanner;
+
+public class Mang {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("nhập vào số phấn tử của mảng:");
+		int n = scanner.nextInt();
+		int[] a = new int[n];
+		for(int index=0; index<n; index++)
+		{
+			System.out.print("a"+"["+(index+1)+"]=");
+			a[index]=scanner.nextInt();
+		}
+		int index =0;
+		System.out.print("các giá tri cua mảng là :" );
+		do {
+			System.out.print(a[index]+" ");
+			index++;
+		}while(index<n);
+		
+		public static void kientra(int n)
+		{
+			int min=0;
+			int max=0;
+				for( index=0; index<n; index++)
+				{
+					if(a[index] < min);
+					{
+						min =a[index];
+					}
+					if(a[index] > max)
+					{
+						max = a[index];
+					}
+				}
+				System.out.println("\nmin=" + min );
+				System.out.println("max=" + max );
+		}
+		kiemtra();
+		
+	}
+	
+
+}
